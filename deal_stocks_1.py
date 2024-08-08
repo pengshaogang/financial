@@ -64,8 +64,10 @@ for file_name in file_names:
         accounts_recei_row = None
         total_current_assets_row = None
 
-
+        b1_value = balance_sheet['B1'].value
         for row in balance_sheet.iter_rows(min_row=2, values_only=True):#from row 2 begin, col 1 only
+            if b1_value == '2024-03-31':
+                row = row[:1] + row[2:]
             if row[0] == '流动资产合计':#24
                 asset_row = row
             elif row[0] == '流动负债合计':#59
@@ -1052,42 +1054,6 @@ for file_name in file_names:
         else:
             results_cost_income_11['毛利润率'] = ['-'] * 5
 
-        # years_plot = ['2019/12/31', '2020/12/31', '2021/12/31', '2022/12/31', '2023/12/31']
-        # results_cost_income_7_copy = {'成本/收入': []}
-        # results_cost_income_7_copy['成本/收入'] = results_cost_income_7['成本/收入'][::-1]
-        #
-        # data_plot = [
-        #     [years_plot[0],results_cost_income_7_copy['成本/收入'][0]],
-        #     [years_plot[1], results_cost_income_7_copy['成本/收入'][1]],
-        #     [years_plot[2], results_cost_income_7_copy['成本/收入'][2]],
-        #     [years_plot[3], results_cost_income_7_copy['成本/收入'][3]],
-        #     [years_plot[4], results_cost_income_7_copy['成本/收入'][4]],
-        # ]
-
-
-
-            # chart.grouping = 'stacked'  # 设置图表为堆叠面积图
-            # chart.title = "成本收入比率"
-            #
-            #
-            #
-            # categories = Reference(cost_income_sheet, min_col=2, min_row=10, max_col=6, max_row=10)
-            # chart.set_categories(categories)
-            #
-            # for row in cost_income_sheet.iter_rows(min_row=categories.min_row, max_row=categories.max_row, min_col=categories.min_col,
-            #                         max_col=categories.max_col):
-            #     values = [cell.value for cell in row]
-            #     print(values)
-            #
-            # for i in range(11, 12):
-            #     chart_data = Reference(cost_income_sheet, min_col=2, min_row=i, max_col=6, max_row=i)
-            #     chart.add_data(chart_data, titles_from_data=True)
-            #
-            #
-            #
-            # chart.title = "成本收入比率"
-            #
-            # cost_income_sheet.add_chart(chart, "H1")
 
 
 
@@ -1656,6 +1622,7 @@ for file_name in file_names:
             values = Reference(cost_income_sheet, min_col=2, min_row=i, max_col=6, max_row=i)
             series = Series(values, title=cost_income_sheet[f'A{i}'].value)
             chart.series.append(series)
+
 
         categories = Reference(cost_income_sheet, min_col=2, max_col=6, min_row=10, max_row=10)
         chart.set_categories(categories)
