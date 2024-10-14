@@ -1,3 +1,1 @@
-# financial
-
-this is a project to count the situation of A company with different versions
+This version consists of all kinds of industry, preliminary analysis
