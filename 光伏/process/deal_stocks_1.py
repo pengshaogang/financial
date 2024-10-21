@@ -107,7 +107,7 @@ for file_name in file_names:
                 # print(asset_row[i])
                 value1 = asset_row[i] if asset_row[i] is not None else '-'
                 value2 = liability_row[i] if liability_row[i] is not None else '-'
-                if value1 != '-' and value2 != '-' and value2 != 0:
+                if value1 != '-' and value1 != '--' and value2 != '-' and value2 != '--' and value2 != 0:
                     try:
                         # 计算除法
                         result = float(value1) / float(value2)
