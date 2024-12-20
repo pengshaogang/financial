@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="24家整车制造行业上市公司"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp" /> <!-- 增加的 marginTop 属性 -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST    亚星(600213)"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST    曙光(600303)"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST    汉马(600375)"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一汽解放(000800)"
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick_erryq" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上汽集团(600104)"
+        app:layout_constraintTop_toBottomOf="@id/button4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="东风汽车(600006)"
+        app:layout_constraintTop_toBottomOf="@id/button5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国重汽(000951)"
+        app:layout_constraintTop_toBottomOf="@id/button6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中通客车(000957)"
+        app:layout_constraintTop_toBottomOf="@id/button7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick_errzt" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中集车辆(301039)"
+        app:layout_constraintTop_toBottomOf="@id/button8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="众泰汽车(000980)"
+        app:layout_constraintTop_toBottomOf="@id/button9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick_errztai" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="力帆科技(601777)"
+        app:layout_constraintTop_toBottomOf="@id/button10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick_errlf" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北汽蓝谷(600733)"
+        app:layout_constraintTop_toBottomOf="@id/button11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp"
+        android:onClick="onButtonClick_errbq" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宇通客车(600066)"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安凯客车(000868)"
+        app:layout_constraintTop_toBottomOf="@id/button13"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick_errak" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广汽集团(601238)"
+        app:layout_constraintTop_toBottomOf="@id/button14"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    比亚迪(002594)"
+        app:layout_constraintTop_toBottomOf="@id/button15"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江淮汽车(600418)"
+        app:layout_constraintTop_toBottomOf="@id/button16"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江铃汽车(000550)"
+        app:layout_constraintTop_toBottomOf="@id/button17"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="海马汽车(000572)"
+        app:layout_constraintTop_toBottomOf="@id/button18"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick_errhm" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="福田汽车(600166)"
+        app:layout_constraintTop_toBottomOf="@id/button19"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    赛力斯(601127)"
+        app:layout_constraintTop_toBottomOf="@id/button20"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金龙汽车(600686)"
+        app:layout_constraintTop_toBottomOf="@id/button21"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长城汽车(601633)"
+        app:layout_constraintTop_toBottomOf="@id/button22"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长安汽车(000625)"
+        app:layout_constraintTop_toBottomOf="@id/button23"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:onClick="onButtonClick" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityak">
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="    2019年4月，安凯客车因净利润连续两年亏损，被实行“退市风险警示”处理，股票简称由“安凯客车”变更为“*ST安凯”。2019年，安凯客车实现扭亏为盈，不过主要利润来源为依靠处置非流动资产。2021年4月，*ST安凯摘星脱帽。系统数据异常值显示：2023年资本保值增值率比2022年增长了近10倍，且销售费用率、管理费用率、研发费用率比2022年都呈减少趋势等异常变动。"-->
+<!--        android:textSize="15sp"-->
+<!--        android:justificationMode="inter_word"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:paddingHorizontal="16dp"-->
+
+
+<!--        /> &lt;!&ndash; 增加的 marginTop 属性 &ndash;&gt;-->
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
